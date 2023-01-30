@@ -6,3 +6,4 @@ Build Watch Complications in SwiftUI and compatible with Widgets
 ## ScreenShot
 
 <img width="266" src=".content/watchos-app.png">
+<img width="266" src=".content/watchos-widget.png">

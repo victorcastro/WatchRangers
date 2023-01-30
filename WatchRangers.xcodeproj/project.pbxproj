@@ -11,11 +11,17 @@
 		CEFCBC822987FD8500CCC305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCBC812987FD8500CCC305 /* ContentView.swift */; };
 		CEFCBC842987FD8600CCC305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFCBC832987FD8600CCC305 /* Assets.xcassets */; };
 		CEFCBC872987FD8700CCC305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFCBC862987FD8700CCC305 /* Preview Assets.xcassets */; };
-		CEFCBC8D2987FD8700CCC305 /* WatchRangers Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEFCBC8C2987FD8700CCC305 /* WatchRangers Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEFCBC8D2987FD8700CCC305 /* WatchRangers WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEFCBC8C2987FD8700CCC305 /* WatchRangers WatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CEFCBC922987FD8700CCC305 /* WatchRangersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCBC912987FD8700CCC305 /* WatchRangersApp.swift */; };
 		CEFCBC942987FD8700CCC305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCBC932987FD8700CCC305 /* ContentView.swift */; };
 		CEFCBC962987FD8800CCC305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFCBC952987FD8800CCC305 /* Assets.xcassets */; };
 		CEFCBC992987FD8800CCC305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFCBC982987FD8800CCC305 /* Preview Assets.xcassets */; };
+		CEFCBCD22988030000CCC305 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFCBCA92988029500CCC305 /* WidgetKit.framework */; };
+		CEFCBCD32988030000CCC305 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFCBCAB2988029500CCC305 /* SwiftUI.framework */; };
+		CEFCBCD62988030000CCC305 /* WatchRangers_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCBCD52988030000CCC305 /* WatchRangers_Widget.swift */; };
+		CEFCBCD82988030100CCC305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFCBCD72988030100CCC305 /* Assets.xcassets */; };
+		CEFCBCDC2988030100CCC305 /* WatchRangers WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CEFCBCD12988030000CCC305 /* WatchRangers WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEFCBCE2298845C700CCC305 /* ranger-notificacion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEFCBCE1298845C700CCC305 /* ranger-notificacion.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,13 @@
 			remoteGlobalIDString = CEFCBC8B2987FD8700CCC305;
 			remoteInfo = "WatchRangers Watch App";
 		};
+		CEFCBCDA2988030100CCC305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFCBC742987FD8500CCC305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFCBCD02988030000CCC305;
+			remoteInfo = "WatchRangers WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,9 +48,20 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				CEFCBC8D2987FD8700CCC305 /* WatchRangers Watch App.app in Embed Watch Content */,
+				CEFCBC8D2987FD8700CCC305 /* WatchRangers WatchApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFCBCB92988029600CCC305 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEFCBCDC2988030100CCC305 /* WatchRangers WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -48,11 +72,18 @@
 		CEFCBC812987FD8500CCC305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEFCBC832987FD8600CCC305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFCBC862987FD8700CCC305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CEFCBC8C2987FD8700CCC305 /* WatchRangers Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchRangers Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFCBC8C2987FD8700CCC305 /* WatchRangers WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchRangers WatchApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFCBC912987FD8700CCC305 /* WatchRangersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRangersApp.swift; sourceTree = "<group>"; };
 		CEFCBC932987FD8700CCC305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEFCBC952987FD8800CCC305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFCBC982987FD8800CCC305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEFCBCA92988029500CCC305 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CEFCBCAB2988029500CCC305 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CEFCBCD12988030000CCC305 /* WatchRangers WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchRangers WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFCBCD52988030000CCC305 /* WatchRangers_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRangers_Widget.swift; sourceTree = "<group>"; };
+		CEFCBCD72988030100CCC305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFCBCD92988030100CCC305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFCBCE1298845C700CCC305 /* ranger-notificacion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ranger-notificacion.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +101,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEFCBCCE2988030000CCC305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFCBCD32988030000CCC305 /* SwiftUI.framework in Frameworks */,
+				CEFCBCD22988030000CCC305 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				CEFCBC7E2987FD8500CCC305 /* WatchRangers */,
-				CEFCBC902987FD8700CCC305 /* WatchRangers Watch App */,
+				CEFCBC902987FD8700CCC305 /* WatchRangers WatchApp */,
+				CEFCBCD42988030000CCC305 /* WatchRangers Widget */,
+				CEFCBCA82988029500CCC305 /* Frameworks */,
 				CEFCBC7D2987FD8500CCC305 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				CEFCBC7C2987FD8500CCC305 /* WatchRangers.app */,
-				CEFCBC8C2987FD8700CCC305 /* WatchRangers Watch App.app */,
+				CEFCBC8C2987FD8700CCC305 /* WatchRangers WatchApp.app */,
+				CEFCBCD12988030000CCC305 /* WatchRangers WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,15 +153,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CEFCBC902987FD8700CCC305 /* WatchRangers Watch App */ = {
+		CEFCBC902987FD8700CCC305 /* WatchRangers WatchApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEFCBCE0298845BC00CCC305 /* Sounds */,
 				CEFCBC912987FD8700CCC305 /* WatchRangersApp.swift */,
 				CEFCBC932987FD8700CCC305 /* ContentView.swift */,
 				CEFCBC952987FD8800CCC305 /* Assets.xcassets */,
 				CEFCBC972987FD8800CCC305 /* Preview Content */,
 			);
-			path = "WatchRangers Watch App";
+			path = "WatchRangers WatchApp";
 			sourceTree = "<group>";
 		};
 		CEFCBC972987FD8800CCC305 /* Preview Content */ = {
@@ -127,6 +171,33 @@
 				CEFCBC982987FD8800CCC305 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEFCBCA82988029500CCC305 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEFCBCA92988029500CCC305 /* WidgetKit.framework */,
+				CEFCBCAB2988029500CCC305 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEFCBCD42988030000CCC305 /* WatchRangers Widget */ = {
+			isa = PBXGroup;
+			children = (
+				CEFCBCD52988030000CCC305 /* WatchRangers_Widget.swift */,
+				CEFCBCD72988030100CCC305 /* Assets.xcassets */,
+				CEFCBCD92988030100CCC305 /* Info.plist */,
+			);
+			path = "WatchRangers Widget";
+			sourceTree = "<group>";
+		};
+		CEFCBCE0298845BC00CCC305 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CEFCBCE1298845C700CCC305 /* ranger-notificacion.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,22 +222,41 @@
 			productReference = CEFCBC7C2987FD8500CCC305 /* WatchRangers.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CEFCBC8B2987FD8700CCC305 /* WatchRangers Watch App */ = {
+		CEFCBC8B2987FD8700CCC305 /* WatchRangers WatchApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEFCBC9C2987FD8800CCC305 /* Build configuration list for PBXNativeTarget "WatchRangers Watch App" */;
+			buildConfigurationList = CEFCBC9C2987FD8800CCC305 /* Build configuration list for PBXNativeTarget "WatchRangers WatchApp" */;
 			buildPhases = (
 				CEFCBC882987FD8700CCC305 /* Sources */,
 				CEFCBC892987FD8700CCC305 /* Frameworks */,
 				CEFCBC8A2987FD8700CCC305 /* Resources */,
+				CEFCBCB92988029600CCC305 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFCBCDB2988030100CCC305 /* PBXTargetDependency */,
+			);
+			name = "WatchRangers WatchApp";
+			productName = "WatchRangers Watch App";
+			productReference = CEFCBC8C2987FD8700CCC305 /* WatchRangers WatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEFCBCD02988030000CCC305 /* WatchRangers WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFCBCDD2988030100CCC305 /* Build configuration list for PBXNativeTarget "WatchRangers WidgetExtension" */;
+			buildPhases = (
+				CEFCBCCD2988030000CCC305 /* Sources */,
+				CEFCBCCE2988030000CCC305 /* Frameworks */,
+				CEFCBCCF2988030000CCC305 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "WatchRangers Watch App";
-			productName = "WatchRangers Watch App";
-			productReference = CEFCBC8C2987FD8700CCC305 /* WatchRangers Watch App.app */;
-			productType = "com.apple.product-type.application";
+			name = "WatchRangers WidgetExtension";
+			productName = "WatchRangers WidgetExtension";
+			productReference = CEFCBCD12988030000CCC305 /* WatchRangers WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -182,6 +272,9 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					CEFCBC8B2987FD8700CCC305 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CEFCBCD02988030000CCC305 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -200,7 +293,8 @@
 			projectRoot = "";
 			targets = (
 				CEFCBC7B2987FD8500CCC305 /* WatchRangers */,
-				CEFCBC8B2987FD8700CCC305 /* WatchRangers Watch App */,
+				CEFCBC8B2987FD8700CCC305 /* WatchRangers WatchApp */,
+				CEFCBCD02988030000CCC305 /* WatchRangers WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +315,15 @@
 			files = (
 				CEFCBC992987FD8800CCC305 /* Preview Assets.xcassets in Resources */,
 				CEFCBC962987FD8800CCC305 /* Assets.xcassets in Resources */,
+				CEFCBCE2298845C700CCC305 /* ranger-notificacion.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFCBCCF2988030000CCC305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFCBCD82988030100CCC305 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,13 +348,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEFCBCCD2988030000CCC305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFCBCD62988030000CCC305 /* WatchRangers_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		CEFCBC8F2987FD8700CCC305 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CEFCBC8B2987FD8700CCC305 /* WatchRangers Watch App */;
+			target = CEFCBC8B2987FD8700CCC305 /* WatchRangers WatchApp */;
 			targetProxy = CEFCBC8E2987FD8700CCC305 /* PBXContainerItemProxy */;
+		};
+		CEFCBCDB2988030100CCC305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFCBCD02988030000CCC305 /* WatchRangers WidgetExtension */;
+			targetProxy = CEFCBCDA2988030100CCC305 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -368,11 +484,12 @@
 		CEFCBC9D2987FD8800CCC305 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchRangers Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WatchRangers WatchApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4G9UQ8D789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -398,11 +515,12 @@
 		CEFCBC9E2987FD8800CCC305 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchRangers Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WatchRangers WatchApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4G9UQ8D789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -493,6 +611,67 @@
 			};
 			name = Release;
 		};
+		CEFCBCDE2988030100CCC305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G9UQ8D789;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchRangers Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchRangers Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.victorcastro.WatchRangers.watchkitapp.WatchRangers-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		CEFCBCDF2988030100CCC305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G9UQ8D789;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchRangers Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchRangers Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.victorcastro.WatchRangers.watchkitapp.WatchRangers-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -505,7 +684,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEFCBC9C2987FD8800CCC305 /* Build configuration list for PBXNativeTarget "WatchRangers Watch App" */ = {
+		CEFCBC9C2987FD8800CCC305 /* Build configuration list for PBXNativeTarget "WatchRangers WatchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEFCBC9D2987FD8800CCC305 /* Debug */,
@@ -519,6 +698,15 @@
 			buildConfigurations = (
 				CEFCBCA12987FD8800CCC305 /* Debug */,
 				CEFCBCA22987FD8800CCC305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFCBCDD2988030100CCC305 /* Build configuration list for PBXNativeTarget "WatchRangers WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFCBCDE2988030100CCC305 /* Debug */,
+				CEFCBCDF2988030100CCC305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

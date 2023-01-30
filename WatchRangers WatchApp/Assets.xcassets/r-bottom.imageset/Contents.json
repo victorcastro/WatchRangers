@@ -1,9 +1,8 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "platform" : "watchos",
-      "size" : "1024x1024"
+      "filename" : "r-bottom.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {
